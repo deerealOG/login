@@ -1,15 +1,191 @@
+:root {
+  --primary-color: #262262;
+  --overlay-color: #262262;
+}
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  html {
-    font-size: 16px;
-  }
-  body {
-    position: relative;
-    width: 100vw;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f37821
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #262262;
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #262262;
+ 
+}
+body {
+  height: auto;
+  width: 100vw;
+  position: relative;
+}
+button {
+  cursor: pointer;
+}
+#navbar {
+  background: #262262;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 87px;
+  padding-right: 20px;
+  padding-left: 5px;
+  transition: all 0.7s ease-in;
+  position: relative;
+  top: 0;
+  z-index: 10;
+}
+.menu-wrap {
+  position: relative;
+  top: -30px;
+  left: -12px;
+  z-index: 1;
+}
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+/* show menu when checked */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+/* scale of menu when shown */
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: 0.7s;
+}
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: var(--primary-color[]);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* hamburger line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+/* top line */
+.menu-wrap .hamburger > div::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+/* bottom line */
+.menu-wrap .hamburger > div::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* toggler animate */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+/* shakes X line on hover, when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* turns line into X */
+.menu-wrap .toggler:checked + .hamburger > div::before,
+.menu-wrap .toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-wrap .menu > div {
+  background: var(--overlay-color);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+}
+
+.menu-wrap .menu > div > {
+  text-align: center;
+  max-width: 100vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.menu-wrap .menu > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.menu-wrap .menu > div > ul > li a {
+  font-family: "Poppins";
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.4s;
+}
   #navbar {
     background: #262262;
     height: 90px;
@@ -25,10 +201,7 @@
     top: 0;
     z-index: 10;
   }
-  #ipadMenu {
-    display: none;
-  }
-  
+ 
   #mycta {
     display: flex;
     flex-direction: row;
@@ -37,18 +210,7 @@
     gap: 10px;
   }
   
-  #avatar {
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  #avatar img {
-    height: auto;
-    width: 40px;
-  }
+  
   #mycta {
     padding: 0;
     margin: 0;
@@ -69,6 +231,9 @@
     border: transparent;
     border-radius: 10px;
   }
+  #mycta .login:hover {
+    background: #ff6a00;
+  }
   #mycta .register {
     display: flex;
     flex-direction: row;
@@ -84,16 +249,14 @@
     background: transparent;
     border: 1px solid #f37821;
   }
-  #logo {
-    height: 80px;
-    width: 80px;
+  #mycta .register:hover {
+    color: #f37821;
   }
   #logo:hover {
     cursor: pointer;
   }
   #logo img {
-    height: 80px;
-    width: 80px;
+    height: 60px;
   }
   
   #hamburger {
@@ -102,6 +265,19 @@
   #desktop {
     display: none;
   }
+  form i {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+}
+
+#passcont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+
+}
   aside {
     display: none;
   }
@@ -235,7 +411,7 @@
     line-height: 150%;
     color: #262262;
   }
-  #email input {
+  #eml {
     background: rgba(38, 34, 98, 0.1);
     border-radius: 10px;
     display: flex;
@@ -245,10 +421,10 @@
     gap: 10px;
     border: transparent;
   }
-  #email input:focus {
-    outline: solid 2px #f37821;
+  #eml:focus {
+    outline:solid 2px #f37821;
   }
-  #email input::placeholder {
+  #eml::placeholder {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 300;
@@ -279,7 +455,11 @@
     line-height: 150%;
     align-self: flex-end;
   }
-  #password input {
+  #password .forgotP a{
+    text-decoration: none;
+    color: rgba(38, 34, 98, 0.8);
+  }
+  #pass {
     background: rgba(38, 34, 98, 0.1);
     border-radius: 10px;
     display: flex;
@@ -288,11 +468,12 @@
     padding: 10px 20px;
     gap: 10px;
     border: transparent;
+    width: 100%;
   }
-  #password input:focus {
+  #pass:focus {
     outline: solid 2px #f37821;
   }
-  #password input::placeholder {
+  #pass::placeholder {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 300;
@@ -315,7 +496,12 @@
     line-height: 150%;
     color: #ffffff;
     width: 106px;
+    text-align: center;
     border: transparent;
+    cursor: pointer;
+  }
+  #submit:hover{
+    background: #ff6a00;
   }
   #terms {
     display: flex;
@@ -478,7 +664,15 @@
       padding-left: 20px;
     }
   
-    #hamburger {
+    #mycta .login {
+      font-weight: 700;
+      padding: 10px 24px;
+    }
+    #mycta .register {
+      font-weight: 700;
+      padding: 10px 24px;
+    }
+    .menu-wrap {
       display: none;
     }
     aside {
@@ -494,7 +688,8 @@
       margin-top: 0;
     }
     #cta {
-      top: 20px;
+      top: 30px;
+      left: 25%;
     }
     #regInSec {
       top: 60px;
@@ -518,6 +713,8 @@
       padding: 0;
       flex-direction: row;
       gap: 100px;
+      position: relative;
+      top: 30px;
     }
   }
   @media all and (min-width: 1000px) {
@@ -527,7 +724,7 @@
       position: fixed;
     }
     main {
-      left: 30%;
+      left: 35%;
     }
   @media all and (min-width: 1400px) {
     #navbar {

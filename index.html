@@ -32,7 +32,7 @@
   </head>
   <body>
     <body>
-      <nav id="navbar">
+      <nav id="navbar"  role="navigation" aria-label="main navigation">
         <span id="logo">
           <img src="images/logo.svg" alt="brand logo" />
         </span>
@@ -49,20 +49,32 @@
         <span id="mycta">
           <button class="login">Login</button>
           <button class="register">Register</button>
-          <span class="menu-wrap">
-            <input type="checkbox" name="" id="" class="toggler" />
-            <div class="hamburger"><div></div></div>
-            <div class="menu">
-              <div>
-                <ul>
-                  <li><a href="#">Hire Engineer</a></li>
-                  <li><a href="#">Find Job</a></li>
-                  <li><a href="#">Post a Job</a></li>
-                </ul>
-              </div>
-            </div>
-          </span>
+          
         </span>
+        
+        <input id="toggle" type="checkbox"></input>
+
+<label for="toggle" class="hamburger">
+<div class="top-bun"></div>
+<div class="meat"></div>
+<div class="bottom-bun"></div>
+</label>
+
+<div class="nav">
+<div class="nav-wrapper">
+<nav>
+  <a href="#">Hire Engineer</a><br>
+  <a href="#">Find Job</a><br>
+  <a href="#">Post a Job</a><br>
+  <div id="navcta">
+    <button class="login">Login</button>
+    <button class="register">Register</button>
+  </div>
+  
+</nav>
+</div>
+</div>
+        
       </nav>
         <aside>
           <img srcset="photo_2.png 480w,

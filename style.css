@@ -137,9 +137,7 @@ button {
 #mycta .register:hover {
   color: #f37821;
 }
-#logo {
-padding: 10px 20px;
-}
+
 #logo:hover {
 cursor: pointer;
 }
@@ -615,7 +613,6 @@ Animations
   
     #navbar {
       z-index: 10;
-      padding-left: 20px;
     }
     #mycta {
       display: flex;

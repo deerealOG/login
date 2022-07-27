@@ -26,7 +26,7 @@ button {
   justify-content:flex-start;
   gap: 5px;
   width: 100%;
-  height: 87px;
+  height: 80px;
   padding-right: 20px;
   padding-left: 15px;
   transition: all 0.7s ease-in;
@@ -99,11 +99,12 @@ button {
   gap: 10px;
   padding: 0;
 }
+
 #mycta .login {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 10px 24px;
+  padding: 0.625rem 1.25rem;
 
   font-family: "Poppins";
   font-style: normal;
@@ -115,14 +116,14 @@ button {
   border: transparent;
   border-radius: 10px;
 }
-#mycta .login:hover {
+#mycta .login:hover{
   background: #ff6a00;
 }
 #mycta .register {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 10px 24px;
+  padding: 0.625rem 1.25rem;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -136,10 +137,14 @@ button {
 #mycta .register:hover {
   color: #f37821;
 }
-
-
+#logo {
+padding: 10px 20px;
+}
+#logo:hover {
+cursor: pointer;
+}
 #logo img {
-  height: 60px
+height: 50px;
 }
   
   #hamburger {
@@ -174,20 +179,21 @@ button {
   right: 5%; 
   margin-top: -45px;
   width: 2em;
-  height: 45px;
+  height: 40px;
   z-index: 5;
 }
 
 .hamburger div {
   position: relative;
   top: -3px;
-  right: 20px;
-  width: 3em;
-  height: 7px;
-  border-radius: 3px;
+  right: 5vw;
+  width:2em;
+  height:4px;
+  border-radius: 0px;
   background: #ffffff;
-  margin-top: 8px;
+  margin-top: 6px;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .nav {
   position: fixed;
@@ -237,7 +243,7 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -7px;
+  margin-top: -5px;
 }
 
 #toggle:checked + .hamburger + .nav {
@@ -258,7 +264,7 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -7px;
+  margin-top: -5px;
 }
 
 #toggle:checked + .hamburger + .nav {
@@ -279,6 +285,7 @@ Animations
     gap: 20px;
     position: absolute;
     top: 120px;
+    right: 5vw;
     text-align: center;
     width: fit-content;
   
@@ -342,6 +349,7 @@ Animations
     display: flex;
     flex-direction: column;
     gap: 50px;
+    width: 100%;
   }
   #email {
     display: flex;
@@ -433,14 +441,14 @@ Animations
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 24px;
+    width: 90px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
     line-height: 150%;
     color: #ffffff;
-    width: 106px;
     text-align: center;
     border: transparent;
     cursor: pointer;
@@ -515,36 +523,10 @@ Animations
   #navbar {
     justify-content: space-between;
   }
-  #mycta {
-    margin-right: 100px;
-  }
-  #mycta .login {
-    padding: 8px 16px;
-  }
-  #mycta .register {
-    padding: 8px 16px;
-  }
   
-  @media all and (min-width:320px){
-    #navbar {
-      justify-content: space-between;
-    }
-    #mycta {
-      margin-right: 100px;
-    }
-    #mycta .login {
-      padding: 8px 16px;
-    }
-    #mycta .register {
-      padding: 8px 16px;
-    }
-    #logo img{
-      height: 50px;
-    }
-    #cta {
-      right: 5%;
-    }
-  }
+  
+  
+  
 @media all and (min-width: 375px){
   .hamburger {
     right: 5%;
@@ -553,11 +535,7 @@ Animations
     width: 3em;
   }
 }
-  @media all and (min-width: 425px) {
-    body {
-      width: 100vw;
-    }
-  }
+  
   @media all and (min-width: 500px) {
     #userdetails {
       gap: 20px;
@@ -570,25 +548,25 @@ Animations
   @media all and (min-width: 576px) {
   }
   @media (min-width: 768px) {
-    body {
-      height: auto;
-    }
+    
     #navbar {
-      height: 100px;
       position: fixed;
       left: 0;
       top: 0;
       z-index: 10;
     }
     #logo img {
-      height: 60px;
+      height: 50px;
     }
-    #hamburger {
-      display: none;
+    #cta {
+      position: relative;
+      top: 0;
+      left: 60%;
     }
+   
     
   }
-  @media all and (min-width: 860px){}
+ 
    
   @media all and (min-width: 992px) {
     body {
@@ -636,7 +614,6 @@ Animations
     }
   
     #navbar {
-      height: 100px;
       z-index: 10;
       padding-left: 20px;
     }
@@ -654,19 +631,22 @@ Animations
     }
     main {
       position: absolute;
-      top: 100px;
-      left: 35%;
+      top: 140px;
+      left: 32%;
       margin-top: 0;
     }
     #cta {
-      top: 30px; right: 5%;
+      position: relative;
+      top: -20px;
+      left: 60%;
     }
     #regInSec {
-      top: 60px;
+      top: 25%;
      
     }
     #select {
-      top: 70px;
+      position: absolute;
+      top: 15%;
     }
     #email {
       gap: 10px;
@@ -676,7 +656,7 @@ Animations
     }
     
     #category {
-      top: 100px;
+      top: 80px;
       gap: 50px;
     }
     #socialLogin {
@@ -694,7 +674,7 @@ Animations
       position: fixed;
     }
     main {
-      left: 35%;
+      left: 30%;
     }
   @media all and (min-width: 1400px) {
     #navbar {

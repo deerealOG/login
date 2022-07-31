@@ -358,7 +358,7 @@ Animations
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 2rem;
     line-height: 140%;
     color: #030029;
     position: relative;
@@ -370,7 +370,7 @@ Animations
   #select {
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1rem;
     line-height: 150%;
     color: #adadad;
@@ -400,7 +400,7 @@ Animations
   #email p {
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
     line-height: 150%;
     color: #262262;
@@ -435,7 +435,7 @@ Animations
   #password .password {
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
     line-height: 150%;
     color: #262262;

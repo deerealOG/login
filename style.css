@@ -109,12 +109,12 @@ button {
 #yourcta .login{
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 0.625rem 1.25rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
 
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1rem;
   line-height: 140%;
   color: #ffffff;
@@ -126,11 +126,11 @@ button {
 #yourcta .register {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 0.625rem 1rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1rem;
   line-height: 140%;
   color: #ffffff;
@@ -226,7 +226,7 @@ height: 50px;
 
 .hamburger div {
   position: relative;
-  top: 0px;
+  top: -3.5px;
   right: 2vw;
   width:2.6rem;
   height:8px;
@@ -561,9 +561,6 @@ Animations
     text-decoration: none;
   }
   
-  #navbar {
-    justify-content: space-between;
-  }
   
   
   

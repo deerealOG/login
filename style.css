@@ -342,7 +342,7 @@ Animations
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     background: rgba(38, 34, 98, 0.1);
     border-radius: 10px;
     font-family: "Poppins";
@@ -358,7 +358,7 @@ Animations
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 140%;
     color: #030029;
     position: relative;
@@ -411,7 +411,7 @@ Animations
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     gap: 10px;
     border: transparent;
   }
@@ -459,7 +459,7 @@ Animations
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     gap: 10px;
     border: transparent;
     width: 100%;

@@ -226,9 +226,9 @@ height: 50px;
 
 .hamburger div {
   position: relative;
-  top: -2px;
+  top: 0px;
   right: 2vw;
-  width:2.4rem;
+  width:2.6rem;
   height:8px;
   border-radius: 3px;
   background: #ffffff;

@@ -217,19 +217,18 @@ height: 50px;
 .hamburger {
   position: absolute;
   top: 4em;
-  right: 3%; 
+  right: 2%; 
   margin-top: -45px;
   width: 2.2em;
-  height: 40px;
+  height: auto;
   z-index: 5;
 }
 
 .hamburger div {
   position: relative;
-  top: -3.5px;
-  right: 2vw;
-  width:2.6rem;
-  height:8px;
+  top: 2px;
+  width:1.2rem;
+  height:4px;
   border-radius: 3px;
   background: #f37821;
   margin-top: 6px;
@@ -284,7 +283,7 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -8px;
+  margin-top: -4px;
 }
 
 #toggle:checked + .hamburger + .nav {
@@ -305,7 +304,7 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -8px;
+  margin-top: -4px;
 }
 
 #toggle:checked + .hamburger + .nav {

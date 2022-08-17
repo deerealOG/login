@@ -485,6 +485,7 @@ aside {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
   #google {

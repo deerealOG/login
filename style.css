@@ -526,8 +526,10 @@ aside {
   
   
   
-@media all and (min-width: 375px){
-  
+@media all and (max-width: 375px){
+  #socialLogin {
+    flex-direction: column;
+  }
 }
   
   @media all and (min-width: 500px) {
@@ -539,9 +541,7 @@ aside {
     }
   }
   
-  @media all and (min-width: 576px) {
-  }
-  @media (min-width: 768px) {
+  @media all and (min-width: 768px) {
     
     #navbar {
       position: fixed;
@@ -552,7 +552,6 @@ aside {
    #regInSec {
     top: 80px;
    }
-  }
   #select {
     top: 80px;
   }
@@ -566,6 +565,8 @@ aside {
     flex-direction: row;
     justify-content: space-around;
   }
+}
+
  
    
   @media all and (min-width: 992px) {
@@ -669,6 +670,7 @@ aside {
       top: 80px;
       gap: 50px;
     }
+    
     #socialLogin {
       padding: 0;
       flex-direction: row;

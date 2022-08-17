@@ -19,6 +19,7 @@ body {
 button {
   cursor: pointer;
 }
+
 #navbar {
   background: var(--primary-color);
   display: flex;
@@ -311,23 +312,25 @@ Animations
   top: 0;
   transform: scale(1);
 }
-  aside {
-    display: none;
-  }
+aside {
+  display: none;
+}
+
+  
   main {
+    
     margin-top: 100px;
     padding: 0px 20px;
   }
   #cta {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 20px;
-    position: absolute;
-    top: 120px;
-    right: 5vw;
+    position: relative;
+    top: 10px;
     text-align: center;
-    width: fit-content;
+    width: 100%;
   
     font-family: "Poppins";
     font-style: normal;
@@ -361,11 +364,9 @@ Animations
     line-height: 140%;
     color: #030029;
     position: relative;
-    top: 20px;
+    top: -10px;
   }
-  #regInSec span {
-    color: #26226269;
-  }
+  
   #select {
     font-family: "Poppins";
     font-style: normal;
@@ -374,14 +375,14 @@ Animations
     line-height: 150%;
     color: #adadad;
     position: relative;
-    top: 25px;
+    top: -10px;
   }
   #category {
     display: flex;
     flex-direction: column;
     gap: 20px;
     position: relative;
-    top: 80px;
+    top: 40px;
   }
   
   
@@ -561,18 +562,16 @@ Animations
     color: rgba(38, 34, 98, 0.6);
     text-decoration: none;
   }
+#cta {
+  padding-bottom: 40px;
+}
   
   
   
   
   
 @media all and (min-width: 375px){
-  .hamburger {
-    right: 5%;
-  }
-  .hamburger div{
-    width: 3em;
-  }
+  
 }
   
   @media all and (min-width: 500px) {
@@ -597,10 +596,11 @@ Animations
     #logo img {
       height: 50px;
     }
-    #cta {
-      position: relative;
-      top: 0;
-      left: 60%;
+    #regInSec{
+      top: 20px;
+    }
+    #select {
+      top: 20px;
     }
    
     
@@ -610,6 +610,7 @@ Animations
   @media all and (min-width: 992px) {
     body {
       height: auto;
+      
     }
     #navbar {
       position: fixed;
@@ -671,17 +672,18 @@ Animations
       position: relative;
       left: 0;
       top: 60px;
+      width: 30%;
+      opacity: 100%;
     }
     main {
       position: absolute;
       top: 140px;
-      left: 32%;
+      left: 38%;
       margin-top: 0;
     }
     #cta {
       position: relative;
-      top: -20px;
-      left: 60%;
+      top: 140px;
     }
     #regInSec {
       top: 25%;
@@ -716,9 +718,7 @@ Animations
     #navbar {
       position: fixed;
     }
-    main {
-      left: 30%;
-    }
+    
   @media all and (min-width: 1400px) {
     #navbar {
       position: fixed;

@@ -548,19 +548,23 @@ aside {
       left: 0;
       top: 0;
       z-index: 10;
-      height: 80px;
     }
-    #logo img {
-      height: 50px;
-    }
-    #regInSec{
-      top: 20px;
-    }
-    #select {
-      top: 20px;
-    }
-   
-    
+   #regInSec {
+    top: 80px;
+   }
+  }
+  #select {
+    top: 80px;
+  }
+  #textInput {
+    position: relative;
+    top: 30px;
+  }
+  #socialLogin {
+    position: relative;
+    top: -30px;
+    flex-direction: row;
+    justify-content: space-around;
   }
  
    
@@ -571,6 +575,7 @@ aside {
     }
     #navbar {
       position: fixed;
+      height: 80px;
     }
   
   
@@ -622,6 +627,9 @@ aside {
       display: flex;
     }
     .hamburger{
+      display: none;
+    }
+    .nav {
       display: none;
     }
     aside {

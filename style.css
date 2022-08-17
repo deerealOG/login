@@ -335,26 +335,11 @@ aside {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 150%;
     color: rgba(0, 0, 0, 0.8);
   }
-  #cta button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    background: rgba(38, 34, 98, 0.1);
-    border-radius: 10px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 150%;
-    color: #030029;
-    border: transparent;
-  }
+  
   
   #regInSec {
     font-family: "Poppins";
@@ -538,8 +523,8 @@ aside {
   #google a {
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 500;
-    font-size: 0.875rem;
+    font-weight: 600;
+    font-size: 1rem;
     line-height: 150%;
     color: rgba(38, 34, 98, 0.6);
     text-decoration: none;
@@ -553,8 +538,8 @@ aside {
   #facebook a {
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 500;
-    font-size: 0.875rem;
+    font-weight: 600;
+    font-size: 1rem;
     line-height: 150%;
     color: rgba(38, 34, 98, 0.6);
     text-decoration: none;

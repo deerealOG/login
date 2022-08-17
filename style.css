@@ -335,7 +335,7 @@ aside {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 150%;
     color: rgba(0, 0, 0, 0.8);
   }
@@ -360,7 +360,7 @@ aside {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 140%;
     color: #030029;
     position: relative;
@@ -370,7 +370,7 @@ aside {
   #select {
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem;
     line-height: 150%;
     color: #adadad;
@@ -444,8 +444,8 @@ aside {
     color: rgba(38, 34, 98, 0.8);
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 300;
+    font-size: 0.875rem;
     line-height: 150%;
     align-self: flex-end;
   }
@@ -486,8 +486,8 @@ aside {
     width: 90px;
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 0.875rem;
     line-height: 150%;
     color: #ffffff;
     text-align: center;
@@ -506,7 +506,7 @@ aside {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 150%;
     color: #262262;
     width: fit-content;
@@ -519,10 +519,7 @@ aside {
     margin: 0;
   }
   
-  #terms .orange {
-    color: #f37821;
-    text-decoration: none;
-  }
+  
   #socialLogin {
     display: flex;
     flex-direction: column;
@@ -542,7 +539,7 @@ aside {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 150%;
     color: rgba(38, 34, 98, 0.6);
     text-decoration: none;
@@ -557,7 +554,7 @@ aside {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 150%;
     color: rgba(38, 34, 98, 0.6);
     text-decoration: none;
